@@ -22,4 +22,4 @@ function reset() {
 function decrease() {
     counter--;
     document.querySelector('.incrementValue').innerText = counter
-}s
+}
