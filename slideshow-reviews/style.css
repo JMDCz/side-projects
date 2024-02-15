@@ -1,0 +1,9 @@
+/* Container */
+
+body {
+    padding: 40px
+}
+
+.container {
+    border: 1px solid black
+}
