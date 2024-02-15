@@ -48,10 +48,13 @@ function nextReview() {
 }
 
 function previousReview() {
-    if(nextReviewIndex < reviewsArray.length) {
-        document.querySelector('.customerName').innerText = reviewsArray[nextReviewIndex].name
-        document.querySelector('.customerRole').innerText = reviewsArray[nextReviewIndex].role
-        document.querySelector('.customerReview').innerText = reviewsArray[nextReviewIndex].review
-        nextReviewIndex--
-        }
+    nextReviewIndex--
+        if(nextReviewIndex >= 0) {
+            document.querySelector('.customerName').innerText = reviewsArray[nextReviewIndex].name
+            document.querySelector('.customerRole').innerText = reviewsArray[nextReviewIndex].role
+            document.querySelector('.customerReview').innerText = reviewsArray[nextReviewIndex].review
+
+            } else {
+                nextReviewIndex = reviewsArray - 1
+            }
 }
