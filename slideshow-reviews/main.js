@@ -30,31 +30,34 @@ const previousReviewBtn = document.getElementById('viewPreviousReview');
 nextReviewBtn.addEventListener('click', nextReview);
 previousReviewBtn.addEventListener('click', previousReview);
 
+//load intial index
+window.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.customerRole').innerText = reviewsArray[nextReviewIndex].role
+    document.querySelector('.customerName').innerText = reviewsArray[nextReviewIndex].name
+    document.querySelector('.customerReview').innerText = reviewsArray[nextReviewIndex].review
+});
+
 //Global counter variable for Next Review
 let nextReviewIndex = 0
 
+//next review
 function nextReview() {
+    nextReviewIndex++;
+    if(nextReviewIndex > reviewsArray.length - 1) {
+       nextReviewIndex = 0
+    }
+        document.querySelector('.customerRole').innerText = reviewsArray[nextReviewIndex].role
+        document.querySelector('.customerName').innerText = reviewsArray[nextReviewIndex].name
+        document.querySelector('.customerReview').innerText = reviewsArray[nextReviewIndex].review
+}
 
-    if(nextReviewIndex < reviewsArray.length) {
+//previous review
+function previousReview() {
+    nextReviewIndex--;
+    if(nextReviewIndex < 0) {
+        nextReviewIndex = reviewsArray.length - 1
+    } 
         document.querySelector('.customerName').innerText = reviewsArray[nextReviewIndex].name
         document.querySelector('.customerRole').innerText = reviewsArray[nextReviewIndex].role
         document.querySelector('.customerReview').innerText = reviewsArray[nextReviewIndex].review
-        nextReviewIndex++
-
-        } else {
-            nextReviewIndex = 0
-        }
-
-}
-
-function previousReview() {
-    nextReviewIndex--
-        if(nextReviewIndex >= 0) {
-            document.querySelector('.customerName').innerText = reviewsArray[nextReviewIndex].name
-            document.querySelector('.customerRole').innerText = reviewsArray[nextReviewIndex].role
-            document.querySelector('.customerReview').innerText = reviewsArray[nextReviewIndex].review
-
-            } else {
-                nextReviewIndex = reviewsArray - 1
-            }
 }
