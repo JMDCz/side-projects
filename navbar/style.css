@@ -1,0 +1,17 @@
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.links, .social-media {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
