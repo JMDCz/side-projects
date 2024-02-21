@@ -21,10 +21,23 @@ header {
     width: 50px;
 }
 
+/* Button, not displaying by default, only to display within a certain window size */
+.nav-button {
+    display: none;
+
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 650px) {
     .links, .social-media {
         display: none;
+    }
+
+    header > .nav-button {
+        display: block;
+        height: 20px;
+        width: 50px;
+        margin: 25px 0;
     }
 }
