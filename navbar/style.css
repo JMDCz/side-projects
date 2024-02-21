@@ -15,3 +15,16 @@ header {
     justify-content: space-around;
     gap: 15px;
 }
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 650px) {
+    .links, .social-media {
+        display: none;
+    }
+}
