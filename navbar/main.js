@@ -1,6 +1,6 @@
 //Button Event Listener
 
-const dropdownLinks = document.getElementById('dropdown')
+const dropdownLinks = document.querySelector('.hidden')
 
 document.querySelector('.nav-button').addEventListener('click', showDropdown);
 
