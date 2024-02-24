@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-sidebar {
+    width: 150px;
+}
+
+.toggle-sidebar {
+    height: 20px;
+    width: 55px;
+}
