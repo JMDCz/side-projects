@@ -18,7 +18,7 @@ body {
 .main-sidebar-content {
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    width: 100%;
 }
 
 .sidebar-heading {
@@ -28,13 +28,25 @@ body {
 
 .links {
     list-style-type: none;
+    flex: 1 1 auto;
+    font-size: 25px;
+}
+
+.links > li {
+    margin-bottom: 20px;
 }
 
 .social-media-links {
     display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
     padding: 0;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 4px;
 }
 
 /* Close Sidebar Button */
