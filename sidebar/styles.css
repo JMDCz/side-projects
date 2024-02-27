@@ -49,6 +49,11 @@ footer {
     gap: 4px;
 }
 
+/* By default, hide */
+.hidden {
+    display: none;
+}
+
 /* Close Sidebar Button */
 .close-sidebar {
     height: 25px;
