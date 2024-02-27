@@ -9,10 +9,16 @@ body {
 }
 
 .main-sidebar {
-   border: 1px solid black;
-   margin: 10px 0;
-   width: 300px;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    width: 300px;
+ }
 
+.main-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 }
 
 .sidebar-heading {
@@ -24,8 +30,11 @@ body {
     list-style-type: none;
 }
 
-footer {
-    flex-shrink: 1;
+.social-media-links {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
 }
 
 /* Close Sidebar Button */
