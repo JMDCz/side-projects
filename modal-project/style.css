@@ -1,0 +1,19 @@
+/* Body Interface */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+/* Section Interface */
+.main-interface {
+    border: 1px solid black;
+    padding: 50px;
+    
+}
+
+/* Modal Interface */
+.hidden {
+    display: none;
+}
