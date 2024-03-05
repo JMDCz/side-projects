@@ -12,3 +12,10 @@ function toggleModal() {
 
 
 // Button to close Modal display
+const closeModalButton = document.querySelector('.close-modal');
+
+closeModalButton.addEventListener('click', toggleModal)
+
+function toggleModal() {
+    modalInterface.classList.toggle('hidden')
+}
