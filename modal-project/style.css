@@ -8,12 +8,29 @@
 
 /* Section Interface */
 .main-interface {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid black;
     padding: 50px;
+    width: 300px;
+    height: 150px;
     
 }
 
 /* Modal Interface */
-.hidden {
+.main > .hidden {
     display: none;
+}
+
+.main-modal-interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    padding: 30px;
+    width: 275px;
+    height: 125px;
+    margin-left: -370px;
 }
