@@ -29,8 +29,13 @@
     justify-content: center;
     align-items: center;
     border: 1px solid red;
+    background-color: white;
     padding: 30px;
     width: 275px;
     height: 125px;
     margin-left: -370px;
+}
+
+.main-modal-interface > .close-modal {
+    position: absolute; right: 658px; top: 222px;
 }

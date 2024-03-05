@@ -9,3 +9,6 @@ toggleModalButton.addEventListener('click', toggleModal)
 function toggleModal() {
     modalInterface.classList.toggle('hidden')
 }
+
+
+// Button to close Modal display
