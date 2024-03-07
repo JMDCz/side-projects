@@ -1,0 +1,15 @@
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sections */
+
+.main-section > section {
+    border: 1px solid black;
+    display: flex;
+    margin: 15px 0;
+    padding: 15px;
+    justify-content: space-between;
+}
