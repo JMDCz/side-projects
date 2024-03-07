@@ -6,10 +6,13 @@ h1 {
 
 /* Sections */
 
-.main-section > section {
+.main-section > section > section {
     border: 1px solid black;
     display: flex;
-    margin: 15px 0;
     padding: 15px;
     justify-content: space-between;
+}
+
+.main-section > section {
+    margin: 20px 0;
 }
