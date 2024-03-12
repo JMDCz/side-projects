@@ -14,3 +14,9 @@ function closeQuestionTwo() {
     responseTwo.classList.toggle('hidden')
 }
 
+const responseThree = document.querySelector('.question-three-response');
+document.querySelector('.button-three').addEventListener('click', closeQuestionThree);
+
+function closeQuestionThree() {
+    responseThree.classList.toggle('hidden')
+}
