@@ -6,3 +6,11 @@ document.querySelector('.button-one').addEventListener('click', closeQuestionOne
 function closeQuestionOne() {
     responseOne.classList.toggle('hidden')
 }
+
+const responseTwo = document.querySelector('.question-two-response');
+document.querySelector('.button-two').addEventListener('click', closeQuestionTwo);
+
+function closeQuestionTwo() {
+    responseTwo.classList.toggle('hidden')
+}
+

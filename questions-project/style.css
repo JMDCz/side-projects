@@ -19,6 +19,6 @@ h1 {
 
 /* Hidden Class */
 
-.main-section > .section-one > .hidden {
+.main-section > section > .hidden {
     display: none;
 }
