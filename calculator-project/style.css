@@ -1,4 +1,9 @@
 button {
     height: 35px;
     width: 35px;
+    margin: 1px;
+}
+
+.equals-btn {
+    width: 76px;
 }
